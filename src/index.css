@@ -18,6 +18,13 @@
   font-family: 'Helvetica';
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 main {
   background: #f6f2ff;
 }
@@ -28,10 +35,14 @@ main {
   padding: 15px;
 }
 
-#headline {
-  text-align: center;
+.flex-column {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#headline {
+  text-align: center;
 }
 
 #headline h1 {
@@ -58,4 +69,11 @@ main {
   line-height: 18px;
   text-align: center;
   color: #4f4f4f;
+}
+
+.btn a {
+  width: 320px;
+  height: 55px;
+  background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+  border-radius: 10px;
 }
