@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import image from '../assets/image1.svg'
 
 const LandingPage = () => (
   <main>
@@ -8,9 +9,9 @@ const LandingPage = () => (
       <p>Easily host and share events with your friends across any social media.</p>
     </section>
 
-    <section className='details'>
+    <section className='details flex-column'>
       <div className='limg-div'>
-        <img src='../assets/image1.svg' alt='card' />
+        <img src={image} alt='card' />
       </div>
 
       <div className='btn'>
