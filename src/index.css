@@ -1,13 +1,141 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"),
+  url("./assets/fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"),
+  url("./assets/fonts/Helvetica.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  background: #f6f2ff;
+  padding: 40px 10px;
+}
+
+.contain {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#headline {
+  text-align: center;
+}
+
+#headline h1 {
+  font-family: 'HelveticaBold';
+  font-size: 36px;
+  line-height: 36px;
+  color: #240d57;
+  margin-bottom: 20px;
+}
+
+#headline h1 span {
+  display: block;
+  background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#headline p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #4f4f4f;
+  max-width: 500px;
+}
+
+.btn a {
+  align-items: center;
+  height: 48px;
+  display: flex;
+  width: 187px;
+  justify-content: center;
+  background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.limg-div {
+  width: 30%;
+  min-width: 230px;
+}
+
+footer {
+  border-top: 1px solid #aaa;
+  background: #fff;
+  padding: 24px;
+}
+
+footer .flex {
+  width: 331px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 11px 7px;
+}
+
+.in-arr {
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+
+.domain {
+  display: flex;
+  align-items: center;
+}
+
+.domain .icon {
+  width: 8px;
+  margin-right: 2px;
+}
+
+.icon {
+  width: 15px;
+}
+
+.sm {
+  width: 11px;
 }
