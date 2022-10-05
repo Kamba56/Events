@@ -1,6 +1,11 @@
 main {
   background: #fbfaff;
   padding: 0 0 30px;
+  color:#240D57;
+}
+
+.light {
+  color: #828282;
 }
 
 .img-div {

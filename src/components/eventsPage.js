@@ -13,7 +13,7 @@ const EventsPage = () => (
 
     <div className='left intro pad img-div'>
       <h1>Birthday bash</h1>
-      <p>Hosted by Esta</p>
+      <p className='light'>Hosted by Esta</p>
     </div>
 
     <section className='left pad img-div'>
@@ -23,7 +23,7 @@ const EventsPage = () => (
         </div>
         <div className='flex-column'>
           <h2 className='left'>18 August 6:00pm</h2>
-          <p className='left'>to 19 August 1:00pm</p>
+          <p className='left light'>to 19 August 1:00pm</p>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ const EventsPage = () => (
           </div>
           <div className='flex-column'>
             <h2 className='left'>Street name</h2>
-            <p className='left'>19 london street</p>
+            <p className='left light'>19 london street</p>
           </div>
         </div>
 
