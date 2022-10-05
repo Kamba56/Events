@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"),
+  url("./assets/fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"),
+  url("./assets/fonts/Helvetica.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica';
+}
+
+main {
+  background: #f6f2ff;
+}
+
+.contain {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#headline {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#headline h1 {
+  font-family: 'HelveticaBold';
+  font-size: 36px;
+  line-height: 36px;
+  color: #240d57;
+  margin: 40px auto 16px;
+}
+
+#headline h1 span {
+  display: block;
+  background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#headline p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #4f4f4f;
 }
